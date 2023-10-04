@@ -6,7 +6,7 @@ let continent = document.querySelector('#continent');
 let moreInfoHeader = document.querySelector('#more-information');
 let currency = document.querySelector('#currency');
 let population = document.querySelector('#population');
-let flag = document.querySelector('#flag');
+
 
 submit.addEventListener('click',() => {
     yes(country.value);
@@ -27,5 +27,6 @@ function yes(country) {
     moreInfoHeader.textContent = 'More About ' + country;
     currency.textContent = 'Currency: ' + data[0].currencies.CAD.name;
     population.textContent = 'Population: ' + data[0].population;
+    capital.textContent = 'Capital: ' + data[0].capital;
  })
 }
