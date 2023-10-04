@@ -20,7 +20,7 @@ body {
     height: 60vh;
     color: white;
     width: 30vw;
-    
+    overflow: hidden;
 }
 
 .search-section {
